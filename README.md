@@ -69,3 +69,15 @@ Display last 10 lines of file
 ```
 tail -n 10 notes.txt
 ```
+
+4. Editing Files
+While Bash itself doesn’t edit files directly, you can use text editors like nano:
+
+Nano a simple text editor
+```
+nano notes.txt
+```
+Vim  a more advanced text editor
+```
+vim notes.txt
+```
