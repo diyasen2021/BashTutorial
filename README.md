@@ -22,7 +22,15 @@ To check if these files exist:<br>
 ls -a ~
 ```
 
-
-
+### Basic Bash Commands for File System Navigation and File Management
+1. Navigating the File System
+pwd: Displays the current directory
+```
+pwd
+```
+ls: Lists files and directories in the current directory.
+```
+ls
+```
 
 
