@@ -34,12 +34,12 @@ ls
 ```
 Add -a to see hidden files (those starting with a dot, like .bash_profile).<br>
 Add -l for a more detailed list, including permissions and file sizes.<br>
+
 cd [directory_name]: Changes the current directory <br>
 ```
 cd Documents
 ```
 To go back to the previous directory, use cd - <br>
-
 To return to your home directory, use cd ~ <br>
 
 2. Creating and Managing Directories <br>
