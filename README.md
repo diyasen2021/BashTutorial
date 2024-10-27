@@ -16,7 +16,13 @@ Type **"Terminal"** and press Enter.<br>
 
 
 **Setting Up Your Bash Environment (Optional)** <br>
-For many users, macOS comes pre-configured with a .bash_profile and .bashrc file. These files allow you to set environment variables, aliases, and custom configurations.
+For many users, macOS comes pre-configured with a .bash_profile and .bashrc file. These files allow you to set environment variables, aliases, and custom configurations.<br>
+To check if these files exist:<br>
+```
+ls -a ~
+```
+
+
 
 
 
