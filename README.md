@@ -4,7 +4,8 @@ Welcome to our beginner's Bash tutorial! Bash (Bourne Again Shell) is a powerful
 
 ### Getting started with Bash:
 
-On MacOSX <br>
+####On MacOSX 
+
 Open **Finder**. <br>
 Go to **Applications** > **Utilities**. <br> 
 Double-click on **Terminal**.<br>
