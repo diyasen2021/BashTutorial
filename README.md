@@ -24,18 +24,18 @@ ls -a ~
 
 ### Basic Bash Commands for File System Navigation and File Management
 1. Navigating the File System
-pwd: Displays the current directory
+Display the current directory
 ```
 pwd
 ```
-ls: Lists files and directories in the current directory.
+Lists files and directories in the current directory
 ```
 ls
 ```
 Add -a to see hidden files (those starting with a dot, like .bash_profile).<br>
 Add -l for a more detailed list, including permissions and file sizes.<br>
 
-cd [directory_name]: Changes the current directory <br>
+Change the current directory <br>
 ```
 cd Documents
 ```
@@ -43,5 +43,12 @@ To go back to the previous directory, use cd - <br>
 To return to your home directory, use cd ~ <br>
 
 2. Creating and Managing Directories <br>
-mkdir [directory_name]: Creates a new director <br>
+Create a new director 
+```
+mkdir myproject
+```
+Delete a directory.
+```
+rmdir my_project
+```
 
