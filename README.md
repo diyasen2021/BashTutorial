@@ -48,10 +48,7 @@ Create a new director
 ```
 mkdir myproject
 ```
-Delete a directory
-```
-rmdir my_project
-```
+
 3. Creating and Viewing Files <br>
 Creates a new empty file
 ```
@@ -80,4 +77,28 @@ nano notes.txt
 Vim  a more advanced text editor
 ```
 vim notes.txt
+```
+5. Moving, Renaming, and Copying Files
+Moves or rename a file.
+```
+mv notes.txt notes2.txt
+```
+Copy a file.
+```
+cp notes2.txt notes.txt
+```
+
+6. Deleting Files and Directories
+
+Delete a file
+```
+rm notes.txt
+```
+Delete a directory
+```
+rm -r my_project
+```
+7. Reviewing Your Command History
+```
+history
 ```
