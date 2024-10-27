@@ -5,9 +5,9 @@ Welcome to our beginner's Bash tutorial! Bash (Bourne Again Shell) is a powerful
 ### Getting started with Bash:
 
 On MacOSX
-Open **Finder**. 
-Go to **Applications** > **Utilities**. 
+Open **Finder**. <br>
+Go to **Applications** > **Utilities**. <br> 
 Double-click on **Terminal**.
 
-Alternatively, you can use **Spotlight Search**. 
-Press Command + Space to open Spotlight.Type **"Terminal"** and press Enter.
+Alternatively, you can use **Spotlight Search**. <br>
+Press Command + Space to open Spotlight.Type **"Terminal"** and press Enter.<br>
