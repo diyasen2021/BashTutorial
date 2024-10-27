@@ -43,12 +43,29 @@ To go back to the previous directory, use cd - <br>
 To return to your home directory, use cd ~ <br>
 
 2. Creating and Managing Directories <br>
+
 Create a new director 
 ```
 mkdir myproject
 ```
-Delete a directory.
+Delete a directory
 ```
 rmdir my_project
 ```
-
+3. Creating and Viewing Files <br>
+Creates a new empty file
+```
+touch notes.txt
+```
+Display the contents of a file
+```
+cat notes.txt
+```
+Display first 10 lines of file 
+```
+head -n 10 notes.txt
+```
+Display last 10 lines of file
+```
+tail -n 10 notes.txt
+```
