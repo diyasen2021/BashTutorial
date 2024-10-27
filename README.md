@@ -11,5 +11,12 @@ Go to **Applications** > **Utilities**. <br>
 Double-click on **Terminal**.<br>
 
 Alternatively, use **Spotlight Search**. <br>
-Press Command + Space to open Spotlight. <br>
+Press Command + Space to open **Spotlight**. <br>
 Type **"Terminal"** and press Enter.<br>
+
+
+**Setting Up Your Bash Environment (Optional)**
+For many users, macOS comes pre-configured with a .bash_profile and .bashrc file. These files allow you to set environment variables, aliases, and custom configurations.
+
+
+
