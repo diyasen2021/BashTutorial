@@ -32,5 +32,11 @@ ls: Lists files and directories in the current directory.
 ```
 ls
 ```
+Add -a to see hidden files (those starting with a dot, like .bash_profile).
+Add -l for a more detailed list, including permissions and file sizes.
+cd [directory_name]: Changes the current directory
+```
+cd Documents
+```
 
 
