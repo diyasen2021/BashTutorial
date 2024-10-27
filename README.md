@@ -39,7 +39,9 @@ cd [directory_name]: Changes the current directory <br>
 cd Documents
 ```
 To go back to the previous directory, use cd - <br>
+
 To return to your home directory, use cd ~ <br>
+
 2. Creating and Managing Directories <br>
 mkdir [directory_name]: Creates a new director <br>
 
