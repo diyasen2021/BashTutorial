@@ -10,5 +10,6 @@ Open **Finder**. <br>
 Go to **Applications** > **Utilities**. <br> 
 Double-click on **Terminal**.<br>
 
-Alternatively, you can use **Spotlight Search**. <br>
-Press Command + Space to open Spotlight.Type **"Terminal"** and press Enter.<br>
+Alternatively, use **Spotlight Search**. <br>
+Press Command + Space to open Spotlight. <br>
+Type **"Terminal"** and press Enter.<br>
