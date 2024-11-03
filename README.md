@@ -158,7 +158,8 @@ sort -k3 genes.tsv
 3. Finding Unique Lines
 The uniq command is useful for identifying unique entries in a sorted list.
 
-Here is a file  containing repeating entries.
+Example 1: Suppose you have a sorted file chromosomes.txt that lists chromosomes associated with genes and you want to count unique chromosomes 
+   
 ```
 chr1
 chr1
@@ -167,5 +168,18 @@ chr3
 chr3
 chr3
 ```
-
+```
+sort chromosomes.txt | uniq -c
+```
+4. Combining cut, sort, and uniq in Bioinformatics
    
+Example 1: Sort by gene name and expression level (descending)
+```
+cut -f1,2 gene_data.tsv | sort -k1,1 -k2,2nr
+
+```
+Example 2: Find unique genes based on highest expression level
+
+```
+cut -f1,2 gene_data.tsv | sort -k1,1 -k2,2nr | uniq -f1
+```
