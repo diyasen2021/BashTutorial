@@ -6,7 +6,7 @@ Welcome to our beginner's Bash tutorial! Bash (Bourne Again Shell) is a powerful
 
 1. Getting started with Bash
 2. Basic bash commands for file system navigation
-3. Working with Data in Bash
+3. Working with data in Bash
 
 
 ### Getting started with Bash
@@ -110,7 +110,7 @@ rm -r my_project
 history
 ```
 
-### Working with Data in Bash
+### Working with data in Bash
 
 After learning basic file operations, let’s move on to some data manipulation commands. These are especially useful for bioinformaticians handling large datasets. 
 
