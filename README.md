@@ -5,8 +5,8 @@ Welcome to our beginner's Bash tutorial! Bash (Bourne Again Shell) is a powerful
 ### Contents
 
 1. Getting started with Bash
-2. Basic Bash Commands for File System Navigation and File Management
-3. 
+2. Basic bash commands for file system navigation
+3. Working with Data in Bash
 
 
 ### Getting started with Bash
@@ -108,4 +108,29 @@ rm -r my_project
 7. Reviewing Your Command History
 ```
 history
+```
+
+### Working with Data in Bash
+
+After learning basic file operations, let’s move on to some data manipulation commands. These are especially useful for bioinformaticians handling large datasets. 
+
+1. Extracting Specific Columns
+
+```
+cut -d 'delimiter' -f fields filename
+```
+-d specifies the delimiter (e.g., a comma ,, tab \t, or space).
+-f specifies the field(s) you want to extract.
+
+Example: Suppose you have a file called genes.tsv with tab-separated columns: gene name, expression level, and chromosome. Here’s an example:
+```
+GeneA    12.3    chr1
+GeneB    7.8     chr2
+GeneC    19.4    chr1
+GeneD    3.5     chr3
+```
+To extract only the gene names (first column):
+
+```
+cut -f 1 genes.tsv > genenames.txt
 ```
