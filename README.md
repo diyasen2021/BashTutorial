@@ -132,5 +132,40 @@ GeneD    3.5     chr3
 To extract only the gene names (first column):
 
 ```
-cut -f 1 genes.tsv > genenames.txt
+cut -f 1 genes.tsv 
 ```
+
+To extract gene names and expression levels (first and second columns):
+```
+cut -d $"\t" -f 1,2 genes.tsv
+```
+2. Sorting by columns
+The sort command allows you to arrange data in ascending or descending order.
+
+Example 1: Sorting Genes by Expression Level Continuing with the genes.tsv file above, let’s sort it by the expression level (second column) in descending order:
+
+```
+sort -k2,2nr genes.tsv
+```
+-k column: Sort by a specific column.
+-n: Sort numerically (for numbers).
+-r: Reverse the sort order (descending).
+
+Example 2: Sorting by Chromosome If you want to sort genes by their chromosome (third column), alphabetically:
+```
+sort -k3 genes.tsv
+```
+3. Finding Unique Lines
+The uniq command is useful for identifying unique entries in a sorted list.
+
+Here is a file  containing repeating entries.
+```
+chr1
+chr1
+chr2
+chr3
+chr3
+chr3
+```
+
+   
