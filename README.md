@@ -5,8 +5,9 @@ Welcome to our beginner's Bash tutorial! Bash (Bourne Again Shell) is a powerful
 ### Contents
 
 1. Getting started with Bash
-2. Basic bash commands for file system navigation
-3. Working with data in Bash
+2. Basic commands for file system navigation
+3. Checking file contents
+4. File manipulation
 
 
 ### Getting started with Bash
@@ -110,7 +111,30 @@ rm -r my_project
 history
 ```
 
-### Working with data in Bash
+### Checking file contents
+
+Let see how file contents can be displayed using bash commands. 
+
+Suppose you have a file named genes.tsv, here are some ways in which the contents of genes.tsv can be displayed.
+```
+cat genes.tsv
+```
+Or you can use `less`
+```
+less genes.tsv
+```
+Head will allow you to display the first 10 lines of a file.
+
+```
+head SRR097977.fastq
+```
+
+```
+tail SRR097977.fastq
+```
+-Adding -n option to either of these commands will print the first or last n lines of a file.
+
+### File manipulation
 
 After learning basic file operations, let’s move on to some data manipulation commands. These are especially useful for bioinformaticians handling large datasets. 
 
@@ -129,13 +153,13 @@ GeneB    7.8     chr2
 GeneC    19.4    chr1
 GeneD    3.5     chr3
 ```
-To extract only the gene names (first column):
+To extract only the gene names (first column)
 
 ```
 cut -f 1 genes.tsv 
 ```
 
-To extract gene names and expression levels (first and second columns):
+To extract gene names and expression levels (first and second columns)
 ```
 cut -d $"\t" -f 1,2 genes.tsv
 ```
@@ -173,7 +197,7 @@ sort chromosomes.txt | uniq -c
 ```
 4. Combining cut, sort, and uniq in Bioinformatics
    
-Example 1: Sort by gene name and expression level (descending)
+Example 1: Extract gene name and exoression level and then sort (descending)
 ```
 cut -f1,2 gene_data.tsv | sort -k1,1 -k2,2nr
 
