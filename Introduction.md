@@ -1,8 +1,7 @@
 
 
 # What is a shell and why should you learn to use it in Bioinformatics ?
-A shell is a computer program that presents a command line interface which allows you to control your computer using commands entered with a keyboard instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard/touchscreen combination.
-
+A shell is a computer program that presents a command line interface which allows you to communicate with Unix and Linux operating systems. 
 There are many reasons to learn about the shell:
 
 **Essential for Bioinformatics** Many bioinformatics tools are accessible only through the command line. Others offer extended functionalities and configuration options that aren't available in their graphical interfaces. For example, advanced features in BLAST can only be accessed if you’re comfortable with the shell.
@@ -18,23 +17,13 @@ On a Mac or Linux machine, you can access a shell through a program called "Term
 
 To save time, we are going to be working on a remote server where all the necessary data and software available. When we say a 'remote server', we are talking about a computer that is not the one you are working on right now. You will access the Carpentries remote server where everything is prepared for the lesson. We will learn the basics of the shell by manipulating some data files. Some of these files are very large , and would take time to download to your computer. We will also be using several bioinformatic packages in later lessons and installing all of the software would take up time even more time. A 'ready-to-go' server lets us focus on learning.
 
-
-
-# Introduction to Unix commands for Bioinformatics
-
-Welcome to our beginner's Bash tutorial! Bash (Bourne Again Shell) is a powerful command-line shell that allows you to interact directly with your computer's operating system. With Bash, you can navigate your file system, manipulate files, automate tasks, and much more. Whether you're a developer, data scientist, or just someone curious about command-line skills, understanding Bash is an essential skill that can make your computer work for you in powerful ways.
-
-### Contents
+# Contents
 
 1. Getting started with Bash
 2. Basic commands for file system navigation
 3. Checking file contents
 4. File manipulation
 
-
-### Getting started with Bash
-
-**On MacOSX:**
 
 Open **Finder**. <br>
 Go to **Applications** > **Utilities**. <br> 
