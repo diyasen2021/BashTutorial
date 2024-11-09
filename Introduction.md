@@ -1,3 +1,5 @@
+
+
 # What is a shell and why should I care?
 A shell is a computer program that presents a command line interface which allows you to control your computer using commands entered with a keyboard instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard/touchscreen combination.
 
@@ -10,7 +12,7 @@ The shell makes your work more reproducible. When you carry out your work in the
 Many bioinformatic tasks require large amounts of computing power and can't realistically be run on your own machine. These tasks are best performed using remote computers or cloud computing, which can only be accessed through a shell.
 In this lesson you will learn how to use the command line interface to move around in your file system.
 
-How to access the shell
+# How to access the shell
 On a Mac or Linux machine, you can access a shell through a program called "Terminal", which is already available on your computer. The Terminal is a window into which we will type commands. If you're using Windows, you'll need to download a separate program to access the shell.
 
 To save time, we are going to be working on a remote server where all the necessary data and software available. When we say a 'remote server', we are talking about a computer that is not the one you are working on right now. You will access the Carpentries remote server where everything is prepared for the lesson. We will learn the basics of the shell by manipulating some data files. Some of these files are very large , and would take time to download to your computer. We will also be using several bioinformatic packages in later lessons and installing all of the software would take up time even more time. A 'ready-to-go' server lets us focus on learning.
