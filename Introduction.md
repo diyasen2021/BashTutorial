@@ -20,4 +20,98 @@ To save time, we are going to be working on a remote server where all the necess
 You will access the Carpentries remote server where everything is prepared for the lesson. We will learn the basics of the shell by manipulating some data files. Some of these files are very large , and would take time to download to your computer. We will also be using several bioinformatic packages in later lessons and installing all of the software would take up time even more time. A 'ready-to-go' server lets us focus on learning.
 
 
+# Getting Started with AWS
+
+This guide provides step-by-step instructions to help you connect to AWS (Amazon Web Services) and set up a secure environment for accessing and managing resources.
+
+---
+
+## 1. Create an AWS Account
+
+1. Go to the [AWS website](https://aws.amazon.com/) and click on **"Create an AWS Account."**
+2. Follow the instructions to sign up, providing your email address, credit card details, and identity verification.
+3. After completing the setup, you’ll have access to the AWS Management Console.
+
+---
+
+## 2. Set Up an IAM User for Secure Access
+
+AWS provides **IAM (Identity and Access Management)** to manage secure access. Instead of using the root account, create an IAM user with specific permissions.
+
+1. In the AWS Management Console, go to the **IAM** service.
+2. Select **Users** from the sidebar and click **"Add user."**
+3. Name your user (e.g., `myadmin`) and enable **"Programmatic access"** to allow CLI access.
+4. Click **"Next: Permissions,"** then choose **"Attach existing policies directly."**
+5. Select a policy like **AdministratorAccess** or one with the needed permissions.
+6. Continue through the steps, then download the **Access Key ID** and **Secret Access Key** for this user.
+
+---
+
+## 3. Install the AWS CLI
+
+The AWS CLI allows you to interact with AWS services via the command line. Install it based on your operating system.
+
+- **On Linux**:
+  ```bash
+  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  unzip awscliv2.zip
+  sudo ./aws/install
+  ```
+
+- **On macOS**:
+  ```bash
+  brew install awscli
+  ```
+
+- **On Windows**:
+  Download the AWS CLI installer from the [AWS CLI website](https://aws.amazon.com/cli/), then follow the instructions.
+
+---
+
+## 4. Configure the AWS CLI with Your Credentials
+
+1. Run the following command to set up your credentials and default region.
+   ```bash
+   aws configure
+   ```
+2. You’ll be prompted to enter your **Access Key ID**, **Secret Access Key**, **default region** (e.g., `us-east-1`), and **output format** (e.g., `json`).
+
+---
+
+## 5. Set Up an SSH Key Pair (Optional, for EC2 Access)
+
+To connect to EC2 instances, create an SSH key pair.
+
+1. In the AWS Console, go to the **EC2** service, then select **Key Pairs** in the sidebar.
+2. Create a new key pair, selecting **RSA** or **ED25519**.
+3. AWS will prompt you to download the `.pem` file, which you’ll use to connect to instances securely.
+
+---
+
+## 6. Launch an EC2 Instance and Connect
+
+1. In the **EC2 Dashboard**, click **Launch Instance**.
+2. Follow the setup steps, selecting an Amazon Machine Image (AMI), instance type, and security settings.
+3. Under **Key Pair**, select the key pair you created, then launch the instance.
+
+**Connecting via SSH**:
+- Locate the instance's **Public IP address** or **DNS** in the EC2 dashboard.
+- Use the following SSH command (assuming your `.pem` file is in the current directory):
+  ```bash
+  ssh -i "your-key-file.pem" ec2-user@your-instance-public-ip
+  ```
+
+---
+
+## 7. Verify Your Access
+
+Test access to AWS services by running a simple CLI command. For example, list your S3 buckets:
+```bash
+aws s3 ls
+```
+If the setup was successful, you’ll see a list of any existing S3 buckets, confirming your connection to AWS.
+
+---
+
+
 
