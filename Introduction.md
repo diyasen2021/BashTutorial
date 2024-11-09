@@ -41,38 +41,7 @@ AWS provides **IAM (Identity and Access Management)** to manage secure access. I
 
 ---
 
-## 3. Install the AWS CLI
-
-The AWS CLI allows you to interact with AWS services via the command line. Install it based on your operating system.
-
-- **On Linux**:
-  ```bash
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-  unzip awscliv2.zip
-  sudo ./aws/install
-  ```
-
-- **On macOS**:
-  ```bash
-  brew install awscli
-  ```
-
-- **On Windows**:
-  Download the AWS CLI installer from the [AWS CLI website](https://aws.amazon.com/cli/), then follow the instructions.
-
----
-
-## 4. Configure the AWS CLI with Your Credentials
-
-1. Run the following command to set up your credentials and default region.
-   ```bash
-   aws configure
-   ```
-2. You’ll be prompted to enter your **Access Key ID**, **Secret Access Key**, **default region** (e.g., `us-east-1`), and **output format** (e.g., `json`).
-
----
-
-## 5. Set Up an SSH Key Pair (Optional, for EC2 Access)
+## 3. Set Up an SSH Key Pair (mandatory for EC2 Access)
 
 To connect to EC2 instances, create an SSH key pair.
 
@@ -82,13 +51,13 @@ To connect to EC2 instances, create an SSH key pair.
 
 ---
 
-## 6. Launch an EC2 Instance and Connect
+## 4. Launch an EC2 Instance and Connect
 
 1. In the **EC2 Dashboard**, click **Launch Instance**.
 2. Follow the setup steps, selecting an Amazon Machine Image (AMI), instance type, and security settings.
 3. Under **Key Pair**, select the key pair you created, then launch the instance.
 
-**Connecting via SSH**:
+**Connecting via SSH client on AWS**:
 - Locate the instance's **Public IP address** or **DNS** in the EC2 dashboard.
 - Use the following SSH command (assuming your `.pem` file is in the current directory):
   ```bash
