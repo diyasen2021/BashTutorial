@@ -1,6 +1,6 @@
 
 
-# What is a shell and why should I care?
+# What is a shell and why should you learn to use it in Bioinformatics ?
 A shell is a computer program that presents a command line interface which allows you to control your computer using commands entered with a keyboard instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard/touchscreen combination.
 
 There are many reasons to learn about the shell:
