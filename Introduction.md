@@ -66,7 +66,7 @@ To connect to EC2 instances, create an SSH key pair.
 
 ---
 
-## 7. Verify Your Access
+## 5. Verify Your Access
 
 Test access to AWS services by running a simple CLI command. For example, list your S3 buckets:
 ```bash
