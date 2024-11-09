@@ -17,12 +17,6 @@ On a Mac or Linux machine, you can access a shell through a program called "Term
 
 # How to access the shell on AWS
 To save time, we are going to be working on a remote server where all the necessary data and software available. When we say a 'remote server', we are talking about a computer that is not the one you are working on right now. 
-You will access the Carpentries remote server where everything is prepared for the lesson. We will learn the basics of the shell by manipulating some data files. Some of these files are very large , and would take time to download to your computer. We will also be using several bioinformatic packages in later lessons and installing all of the software would take up time even more time. A 'ready-to-go' server lets us focus on learning.
-
-
-# Getting Started with AWS
-
-This guide provides step-by-step instructions to help you connect to AWS (Amazon Web Services) and set up a secure environment for accessing and managing resources.
 
 ---
 
